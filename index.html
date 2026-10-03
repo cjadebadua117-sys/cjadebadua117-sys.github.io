@@ -64,13 +64,7 @@ header{
   box-shadow:var(--highlight),0 14px 34px -22px rgba(0,0,0,.95);
 }
 nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;font-weight:800;letter-spacing:-.02em}
-.mark{
-  width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
-  background:linear-gradient(135deg,var(--blue),var(--violet));
-  font-size:.85rem;font-weight:900;color:#fff;
-  box-shadow:0 6px 16px -6px rgba(59,130,246,.8);
-}
+.brand{display:flex;align-items:center;text-decoration:none;font-weight:800;letter-spacing:-.02em}
 .brand small{display:block;font-size:.66rem;font-weight:500;color:var(--faint);letter-spacing:.14em;text-transform:uppercase}
 .navlinks{display:flex;gap:.35rem;align-items:center;list-style:none}
 .navlinks a{
@@ -282,7 +276,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
   <div class="wrap">
     <nav>
       <a class="brand" href="#top">
-        <span class="mark">CJ</span>
         <span>Christian Jade Badua<small>Information Systems</small></span>
       </a>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
