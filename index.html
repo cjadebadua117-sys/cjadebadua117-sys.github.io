@@ -81,21 +81,12 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .menu-btn{display:none;background:none;border:1px solid var(--border-strong);border-radius:10px;color:var(--text);padding:.4rem .6rem;cursor:pointer}
 
 /* ---------- HERO ---------- */
-.hero{padding:clamp(4rem,11vw,8rem) 0 clamp(3rem,7vw,5rem);position:relative}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:.5rem;
-  font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  color:#93c5fd;background:rgba(59,130,246,.12);
-  border:1px solid rgba(59,130,246,.32);
-  padding:.4rem .9rem;border-radius:999px;margin-bottom:1.5rem;
-}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(16,185,129,.2)}
+.hero{padding:clamp(3.5rem,9vw,6.5rem) 0 clamp(3rem,7vw,5rem);position:relative}
 h1{
-  font-size:clamp(2.4rem,6.4vw,4.6rem);
-  line-height:1.04;font-weight:900;letter-spacing:-.035em;
-  background:linear-gradient(180deg,#ffffff 25%,#9db4d8);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  margin-bottom:1.25rem;
+  font-size:clamp(2.1rem,5.2vw,3.7rem);
+  line-height:1.1;font-weight:800;letter-spacing:-.03em;
+  color:var(--text);
+  margin-bottom:1.25rem;max-width:20ch;
 }
 .lede{font-size:clamp(1.02rem,1.6vw,1.2rem);color:var(--muted);max-width:62ch;margin-bottom:2rem}
 .lede strong{color:var(--text);font-weight:600}
@@ -112,15 +103,15 @@ h1{
   padding:1.1rem 1.2rem;backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);
   box-shadow:var(--highlight);
 }
-.stat b{display:block;font-size:1.7rem;font-weight:800;letter-spacing:-.03em;color:#fff}
-.stat span{font-size:.78rem;color:var(--faint);text-transform:uppercase;letter-spacing:.09em}
+.stat b{display:block;font-size:1.55rem;font-weight:700;letter-spacing:-.02em;color:var(--text)}
+.stat span{display:block;font-size:.84rem;color:var(--faint);line-height:1.4;letter-spacing:0}
 
 /* ---------- SECTIONS ---------- */
 section{padding:clamp(3rem,7vw,5.5rem) 0}
 .sec-head{margin-bottom:2.5rem;max-width:70ch}
 .sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;letter-spacing:-.03em;margin-bottom:.6rem}
 .sec-head p{color:var(--muted)}
-.kicker{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:.7rem}
+.kicker{font-size:.74rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:.7rem}
 
 /* ---------- PROJECT CARDS ---------- */
 .project{
@@ -152,11 +143,9 @@ section{padding:clamp(3rem,7vw,5.5rem) 0}
 .thumb.on{opacity:1;border-color:var(--blue)}
 .body{padding:clamp(1.5rem,3vw,2.4rem)}
 .badge{
-  display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
-  padding:.32rem .75rem;border-radius:999px;margin-bottom:.9rem;
+  display:inline-block;font-size:.74rem;font-weight:600;letter-spacing:.12em;
+  color:var(--faint);margin-bottom:.7rem;font-variant-numeric:tabular-nums;
 }
-.badge.primary{background:rgba(34,211,238,.14);border:1px solid rgba(34,211,238,.4);color:#a5f3fc}
-.badge.second{background:rgba(139,92,246,.14);border:1px solid rgba(139,92,246,.4);color:#ddd6fe}
 .body h3{font-size:clamp(1.35rem,2.5vw,1.85rem);font-weight:800;letter-spacing:-.025em;margin-bottom:.3rem}
 .sub{color:var(--cyan);font-size:.9rem;font-weight:600;margin-bottom:1rem}
 .body p{color:var(--muted);font-size:.97rem;margin-bottom:1.2rem}
@@ -312,13 +301,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="wrap">
-      <span class="eyebrow"><span class="dot"></span> Open to internships &amp; freelance</span>
-      <h1>I build systems<br>campuses actually run on.</h1>
+      <h1>I build Django systems,<br>database first.</h1>
       <p class="lede">
         I'm <strong>Christian Jade Badua</strong>, an Information Systems student at
-        <strong>DMMMSU–NLUC Bacnotan</strong>. I design and build role-based web systems for real
-        campus workflows — student housing, attendance and live presence — with the backend,
-        database and interface treated as one job.
+        <strong>DMMMSU–NLUC Bacnotan</strong>. I work on role-based web systems for student housing
+        and campus attendance — models and migrations, the views that guard them, and the screens
+        people actually use.
       </p>
       <div class="cta-row">
         <a class="realistic-btn" href="#work">
@@ -329,10 +317,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
       </div>
 
       <div class="stats">
-        <div class="stat"><b>2</b><span>Full systems shipped</span></div>
+        <div class="stat"><b>2</b><span>Systems built end to end</span></div>
         <div class="stat"><b>73</b><span>Automated tests</span></div>
         <div class="stat"><b>3</b><span>Roles per system</span></div>
-        <div class="stat"><b>2</b><span>Live databases</span></div>
+        <div class="stat"><b>2</b><span>MySQL schemas</span></div>
       </div>
     </div>
   </section>
@@ -344,7 +332,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
         <div class="kicker">Selected work</div>
         <h2>Two systems, built end to end</h2>
         <p>Both are Django applications running on MySQL via XAMPP, with a shared glassmorphism
-           design language — models, migrations, roles and screens all built from scratch.</p>
+           design language — models, migrations, roles and screens all written by me.</p>
       </div>
 
       <!-- ---------- PROJECT 1: BHIMS ---------- -->
@@ -367,14 +355,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
           </div>
 
           <div class="body">
-            <span class="badge primary">01 · Primary system</span>
+            <span class="badge primary">01</span>
             <h3>BHIMS</h3>
             <div class="sub">Boarding House Information Management System</div>
             <p>
-              A web system for DMMMSU–NLUC students to find, inquire about and book boarding houses
-              near campus. Landlords post listings with photos, rates and amenities; admins moderate
-              every listing before it goes public; students filter by barangay and price, message
-              landlords in a thread, and get confirmed bookings.
+              A boarding house listing and booking system for students near campus. Landlords post
+              listings with photos, rates and amenities; admins moderate every listing before it goes
+              public; students filter by barangay and price, message landlords in a thread, and get
+              confirmed bookings.
             </p>
 
             <div class="roles">
@@ -424,7 +412,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
           </div>
 
           <div class="body">
-            <span class="badge second">02 · Second system</span>
+            <span class="badge second">02</span>
             <h3>CIS-Prox</h3>
             <div class="sub">Student Presence &amp; Real-Time Locating System</div>
             <p>
@@ -509,15 +497,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
       <div class="about">
         <div class="reveal">
           <p>
-            Most student projects stop at the database. I build the whole loop: the
+            I like building the whole loop, not just the database part: the
             <strong>models and migrations</strong>, the <strong>role-based views</strong> that guard
             them, and the <strong>interface</strong> that makes the rules obvious instead of
             confusing.
           </p>
           <p>
-            Both of my systems run on the stack most campuses already have — <strong>Python,
-            Django and MySQL over XAMPP</strong> — so they can actually be deployed and maintained by
-            the next batch of students, not just demoed once.
+            Both systems sit on a stack schools already run — <strong>Python, Django and MySQL over
+            XAMPP</strong> — which keeps them maintainable by whoever picks them up next.
           </p>
           <p>
             On the front end I build my own design system rather than leaning entirely on a
