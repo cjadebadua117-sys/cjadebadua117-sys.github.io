@@ -796,6 +796,11 @@ header.is-hidden{transform:translateY(-101%)}
     var tick = { v: 0 };
     var revealAt = 0.12;
 
+    /* Opened in a background tab? Browsers throttle requestAnimationFrame
+       there, which would freeze this timeline until the failsafe. Drop the
+       curtain immediately instead of showing a stalled counter. */
+    if (pre && document.hidden) { pre.remove(); pre = null; }
+
     if (pre) {
       revealAt = 1.78;
       intro.to(tick, {
